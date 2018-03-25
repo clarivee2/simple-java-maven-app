@@ -8,6 +8,10 @@ pipeline {
 	//}
   //}
   stages {
+    stage ('Test') {
+	  // simple test of shell version
+	  sh 'bash --version'
+	}
     stage('Build') {
 	  steps {
 	    sh 'mvn -B -DskipTests clean package'
