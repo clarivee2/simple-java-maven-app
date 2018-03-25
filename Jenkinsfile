@@ -9,8 +9,10 @@ pipeline {
   //}
   stages {
     stage ('Test') {
+	  steps {
 	  // simple test of shell version
 	  sh 'bash --version'
+	  }
 	}
     stage('Build') {
 	  steps {
