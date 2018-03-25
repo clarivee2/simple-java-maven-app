@@ -30,5 +30,11 @@ pipeline {
                 }
             }
         }
+	// deliver stage - exemplifies pattern of using referenced scripts instead of ending up with a complex pipeline script
+	stage('Deliver') {
+            steps {
+                sh './jenkins/scripts/deliver.sh'
+            }
+        }
   }
 }
