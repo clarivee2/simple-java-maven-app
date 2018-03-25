@@ -8,7 +8,7 @@ pipeline {
 	//}
   //}
   stages {
-    stage ('Test') {
+    stage ('TestVersion') {
 	  steps {
 	  // simple test of shell version
 	  sh 'bash --version'
